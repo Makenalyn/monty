@@ -3,11 +3,9 @@
 
 int main (__attribute__((unused)) int argc, char *argv[])
 {
-	int i;
-
-	for(i = 0;argv[i]; i++)
+	if (argc > 2 || argc < 2)
 	{
-		printf("%s\n", argv[i]);
+		printf("USAGE: monty file\n");
 	}
 	return (0);
 }
